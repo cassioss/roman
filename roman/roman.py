@@ -3,7 +3,7 @@ __author__ = 'Cassio dos Santos Sousa'
 
 def to_roman(num):
     if num <= 0 or num >= 4000:
-        return ValueError('Number cannot be converted to Roman')
+        raise ValueError('Number cannot be converted to Roman')
 
     ones = ['I', 'X', 'C', 'M']
     fives = ['V', 'L', 'D']
